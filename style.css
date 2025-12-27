@@ -1,0 +1,89 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: red;
+  font-family: Roboto;
+}
+
+.nav{
+  grid-area: nav;
+}
+.hlink{
+    font-weight: 400;
+}
+.randomInfo {
+  grid-area: randomInfo;
+}
+.quote {
+  grid-area: quote;
+}
+
+.header {
+  grid-area: header;
+}
+
+.signUp{
+    grid-area: signUp;
+}
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    /*grid-gap: 10px;*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "nav nav nav"
+    "header  header  header"
+    "randomInfo randomInfo randomInfo"
+    "quote quote quote"
+    "signUp signUp signUp"
+    "footer  footer  footer";
+    background-color: black;
+    color: #444;
+  }
+
+
+.box {
+  background-color: #444;
+  color: #fff;
+  padding: 50px;
+  font-size: 150%;
+}
+
+.box.nav{
+    background-color: #1f2937;
+}
+
+.box.header{
+    background-color: #1f2937;
+}
+
+.box.randomInfo{
+    color: black;
+    background-color: white;
+}
+
+.box.quote{
+    background-color: #E5E7EB;
+}
+
+.box.signUp{
+    background-color: white;
+    color: black;
+}
+
+.box.footer{
+    background-color: #1f2937;
+}
+
+.header,
+.footer {
+  background-color: #999;
+}
+
